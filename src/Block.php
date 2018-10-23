@@ -90,7 +90,7 @@ final class Block implements JsonSerializable, Arrayable, Comparable
         $this->hash = $this->generateHash();
         $this->previousBlock = $previousBlock;
     }
-    
+
     /**
      * Generate genesis block
      *
@@ -101,7 +101,7 @@ final class Block implements JsonSerializable, Arrayable, Comparable
     public static function genesis($data = 'Genesis block') : self
     {
         $genesis = (new ReflectionClass(__CLASS__))->newInstanceWithoutConstructor();
-        
+
         $genesis->index = 0;
         $genesis->previousHash = '';
         $genesis->createdDatetime = new DateTimeImmutable();

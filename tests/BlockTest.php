@@ -33,12 +33,12 @@ final class BlockTests extends TestCase
         // Can set and retrieve data
         $this->assertEquals($genesisBlock->getData(), $testData);
     }
-    
+
     public function testCanCreateBlock() : void
     {
         $blockchain = new Blockchain();
         $lastBlock = $blockchain->last();
-    
+
         $testData = 'Sample data';
 
         // Generate next block

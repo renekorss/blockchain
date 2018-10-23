@@ -81,7 +81,7 @@ final class Blockchain implements Countable, JsonSerializable, IteratorAggregate
                 return false;
             }
         }
-        
+
         return true;
     }
 
