@@ -11,10 +11,8 @@ env:
 matrix:
   fast_finish: true
   include:
-    - php: 7.1
     - php: 7.2
       env: RUN_PHPCS="yes" RUN_PHPMD="yes" RUN_COVERALLS="yes"
-    - php: hhvm
     - php: nightly
   allow_failures:
     - php: nightly
