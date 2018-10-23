@@ -6,6 +6,16 @@
 # Blockchain
 Simple blockchain implementation in PHP
 
+## Roadmap
+
+- [x] Block and blockchain structure
+- [x] Genesis block
+- [x] Blockchaing validation
+- [ ] PoW Consensus and mining with difficulty
+- [ ] Wallets and transactions
+- [ ] API
+- [ ] Node
+
 ## Tasks
 
 - `composer build` - build by running tests and all code checks
