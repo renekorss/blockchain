@@ -10,7 +10,7 @@ Simple blockchain implementation in PHP
 
 - [x] Block and blockchain structure
 - [x] Genesis block
-- [x] Blockchaing validation
+- [x] Blockchain validation
 - [ ] PoW Consensus and mining with difficulty
 - [ ] Wallets and transactions
 - [ ] API
