@@ -2,7 +2,7 @@
 /**
  * RKD Blockchain.
  *
- * @link https://github.com/renekorss/Blockchain/
+ * @link https://github.com/renekorss/blockchain/
  *
  * @author Rene Korss <rene.korss@gmail.com>
  * @copyright 2018 Rene Korss
