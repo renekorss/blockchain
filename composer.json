@@ -29,6 +29,8 @@
       "RKD\\Blockchain\\": "tests/"
     }
   },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "scripts": {
     "build": [
       "@test",
