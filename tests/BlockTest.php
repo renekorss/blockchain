@@ -5,7 +5,7 @@
  * @link https://github.com/renekorss/blockchain/
  *
  * @author Rene Korss <rene.korss@gmail.com>
- * @copyright 2018 Rene Korss
+ * @copyright 2020 Rene Korss
  * @license MIT
  */
 
