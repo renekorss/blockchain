@@ -20,7 +20,7 @@ use PHPUnit\Framework\TestCase;
  * @author Rene Korss <rene.korss@gmail.com>
  */
 
-final class BlockchainTests extends TestCase
+final class BlockchainTest extends TestCase
 {
     public function testCanCreateBlockchain() : void
     {
@@ -33,7 +33,7 @@ final class BlockchainTests extends TestCase
         $blockchain = new Blockchain();
 
         // Only has genesis block, so result should be 1
-        $this->assertEquals(1, count($blockchain));
+        $this->assertCount(1, $blockchain);
     }
 
     public function testBlockchainIsTraversable() : void

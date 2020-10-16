@@ -20,7 +20,7 @@ use PHPUnit\Framework\TestCase;
  * @author Rene Korss <rene.korss@gmail.com>
  */
 
-final class BlockTests extends TestCase
+final class BlockTest extends TestCase
 {
     public function testCanCreateGenesisBlock() : void
     {
@@ -31,7 +31,7 @@ final class BlockTests extends TestCase
         $this->assertTrue($genesisBlock->isValid());
 
         // Can set and retrieve data
-        $this->assertEquals($genesisBlock->getData(), $testData);
+        $this->assertSame($testData, $genesisBlock->getData());
     }
 
     public function testCanCreateBlock() : void
@@ -46,12 +46,12 @@ final class BlockTests extends TestCase
         $this->assertTrue($block->isValid());
 
         // Previous hash matches
-        $this->assertEquals($block->getPreviousHash(), $lastBlock->getHash());
+        $this->assertSame($lastBlock->getHash(), $block->getPreviousHash());
 
         // Index is incremented
-        $this->assertEquals($block->getIndex(), $lastBlock->getIndex() + 1);
+        $this->assertSame($lastBlock->getIndex() + 1, $block->getIndex());
 
         // Can get same data back
-        $this->assertEquals($block->getData(), $testData);
+        $this->assertSame($testData, $block->getData());
     }
 }
